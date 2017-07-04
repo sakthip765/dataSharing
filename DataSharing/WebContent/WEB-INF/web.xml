@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SharingofData</display-name>
+  <welcome-file-list>
+    <welcome-file>basic.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GrossServlet</display-name>
+    <servlet-name>GrossServlet</servlet-name>
+    <servlet-class>com.servlet.datasharing.GrossServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GrossServlet</servlet-name>
+    <url-pattern>/GrossServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TakeHomeServlet</display-name>
+    <servlet-name>TakeHomeServlet</servlet-name>
+    <servlet-class>com.servlet.datasharing.TakeHomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TakeHomeServlet</servlet-name>
+    <url-pattern>/TakeHomeServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>AdditionalServlet</display-name>
+    <servlet-name>AdditionalServlet</servlet-name>
+    <servlet-class>com.servlet.datasharing.AdditionalServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdditionalServlet</servlet-name>
+    <url-pattern>/AdditionalServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

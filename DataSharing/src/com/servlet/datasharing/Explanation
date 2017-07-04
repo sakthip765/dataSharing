@@ -1,0 +1,44 @@
+- Sharing of data across multiple Servlets
+	- request scope
+	- session scope
+	- application scope
+
+Request scope
+-----------------
+1. get the reference of servlet request
+
+	javax.servlet.ServletRequest
+
+	It has following methods:
+
+	setAttribute(String name,object val)
+	Object getAttribute(String name)
+	Enumeration getAttributeNames()
+
+2. Session scope
+
+ In this case set of values will accessible to all the servlets which are participating session.
+
+steps:
+	1. HttpSession ses = httpServletRequest.getSession();
+	
+
+	It has following methods:
+
+	setAttribute(String name,object val)
+	Object getAttribute(String name)
+	Enumeration getAttributeNames()
+
+3. Application scope
+
+	If a value is set in application scope, it'll be accessed by all the servlets which are participating in the application
+
+	steps:
+	1. ServletContext ctx = getServletContext()
+	
+	It has following methods:
+
+	setAttribute(String name,object val)
+	Object getAttribute(String name)
+	Enumeration getAttributeNames()
+	
